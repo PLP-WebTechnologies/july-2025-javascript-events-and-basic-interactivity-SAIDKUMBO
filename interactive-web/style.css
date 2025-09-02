@@ -1,0 +1,49 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  transition: background 0.3s, color 0.3s;
+}
+
+h1 {
+  color: darkblue;
+}
+
+section {
+  margin-bottom: 30px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+button {
+  padding: 8px 12px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.dark-mode {
+  background: #222;
+  color: #fff;
+}
+.tabs {
+  margin-bottom: 10px;
+}
+
+.tabBtn {
+  padding: 8px 12px;
+  margin-right: 5px;
+  cursor: pointer;
+  border: 1px solid #444;
+  background: #eee;
+}
+
+.tabBtn.active {
+  background: #444;
+  color: #fff;
+}
+
+.tabContent {
+  padding: 10px;
+  border: 1px solid #444;
+  border-radius: 5px;
+}

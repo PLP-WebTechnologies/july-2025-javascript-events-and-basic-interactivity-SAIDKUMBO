@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Web Page Assignment</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css">
+
+  <script src="script.js"></script>
+
+</head>
+<body>
+  <h1> Interactive Web Page</h1>
+
+  <!-- ================= FORM ================= -->
+  <section>
+    <h2>Signup Form</h2>
+    <form id="signupForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" placeholder="Enter your name"><br><br>
+
+      <label for="email">Email:</label>
+      <input type="text" id="email" placeholder="Enter your email"><br><br>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" placeholder="Enter password"><br><br>
+
+      <button type="submit">Register</button>
+    </form>
+    <p id="formMessage"></p>
+  </section>
+
+  <!-- ================= INTERACTIVE FEATURE 1 ================= -->
+  <section>
+    <h2>Light / Dark Mode Toggle</h2>
+    <button id="toggleModeBtn">Switch to Dark Mode</button>
+  </section>
+
+  <!-- ================= INTERACTIVE FEATURE 2 ================= -->
+  <section>
+    <h2>Click Counter Game 🎮</h2>
+    <p>Clicks: <span id="counter">0</span></p>
+    <button id="countBtn">Click Me!</button>
+    <button id="resetBtn">Reset</button>
+  </section>
+
+  <!-- ================= EXTRA INTERACTIVITY ================= -->
+  <section>
+    <h2>FAQ Section</h2>
+    <p><a href="#" id="toggleFAQ">Show/Hide Answer</a></p>
+    <p id="faqAnswer" style="display:none;">JavaScript makes websites dynamic and fun 🎉</p>
+  </section>
+
+    <!-- ================= INTERACTIVE FEATURE 3 ================= -->
+  <section>
+    <h2>Tabbed Interface</h2>
+    <div class="tabs">
+      <button class="tabBtn" data-tab="tab1">Tab 1</button>
+      <button class="tabBtn" data-tab="tab2">Tab 2</button>
+      <button class="tabBtn" data-tab="tab3">Tab 3</button>
+    </div>
+
+    <div id="tab1" class="tabContent">This is the content of Tab 1.</div>
+    <div id="tab2" class="tabContent" style="display:none;">Here’s Tab 2 content.</div>
+    <div id="tab3" class="tabContent" style="display:none;">Welcome to Tab 3 🎉</div>
+  </section>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
