@@ -1,49 +1,99 @@
+/* General page styling */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 20px;
+  background: #f9f9ff;
+  color: #333;
   transition: background 0.3s, color 0.3s;
 }
 
+/* Heading */
 h1 {
-  color: darkblue;
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 30px;
 }
 
+/* Section boxes */
 section {
   margin-bottom: 30px;
-  padding: 15px;
+  padding: 20px;
+  border-radius: 10px;
+  background: #ffffff;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Form elements */
+label {
+  font-weight: bold;
+  display: inline-block;
+  width: 100px;
+}
+
+input {
+  padding: 8px;
+  margin-bottom: 10px;
+  border-radius: 5px;
   border: 1px solid #ccc;
-  border-radius: 8px;
 }
 
 button {
-  padding: 8px 12px;
-  margin: 5px;
+  padding: 10px 15px;
+  margin-top: 10px;
   cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  background: #3498db;
+  color: white;
+  transition: background 0.3s;
 }
 
-.dark-mode {
-  background: #222;
-  color: #fff;
+button:hover {
+  background: #2980b9;
 }
+
+/* Dark mode */
+.dark-mode {
+  background: #1e1e2f;
+  color: #eee;
+}
+
+.dark-mode section {
+  background: #2c2c3e;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+}
+
+.dark-mode button {
+  background: #e67e22;
+}
+
+.dark-mode button:hover {
+  background: #d35400;
+}
+
+/* Tabs */
 .tabs {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .tabBtn {
-  padding: 8px 12px;
+  padding: 8px 15px;
   margin-right: 5px;
   cursor: pointer;
-  border: 1px solid #444;
-  background: #eee;
+  border: none;
+  border-radius: 5px;
+  background: #bdc3c7;
+  transition: 0.3s;
 }
 
 .tabBtn.active {
-  background: #444;
-  color: #fff;
+  background: #2ecc71;
+  color: white;
 }
 
 .tabContent {
-  padding: 10px;
-  border: 1px solid #444;
+  padding: 15px;
   border-radius: 5px;
+  background: #ecf0f1;
 }
